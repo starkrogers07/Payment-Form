@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+
+<style>
+
+    body{
+
+        background-image: url("image/space.png");
+        padding: 15px;
+        height: 99%;
+        width: 99%;
+        background-attachment: fixed;
+        background-size: 1600px;
+        overflow: auto;
+      
+        
+    }
+
+    
+
+    h1{
+    
+        margin: 5px;
+        padding: 5px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 1px 1px 1px rgb(255, 250, 250);
+        background:rgba(82, 79, 81, 0.4);
+        text-align: center;
+        
+        
+    }
+
+    h2{
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    h1,h2,legend,p{
+        color:rgb(223, 22, 8);
+    }
+
+    .container{
+
+    background-color:rgb(50, 50, 77);
+    padding: 15px 15px 10px 15px;
+    border: 2px solid rgb(96, 22, 114);
+    border-radius: 6px;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 45%;
+    height: 45%;
+    margin-left: 364px;
+
+    }
+
+    input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+
+    width: 100%;
+    padding: 5px;
+    border: 1.5px solid rgb(228, 135, 13);
+}
+
+
+    .lol {
+  transition-duration: 0.4s;
+   width:100%;
+   background-color:cornflowerblue;
+   border: 1px solid cornflowerblue;
+   border-radius: 6px;
+   font-size: medium;
+   text-align: center;
+   color: white;
+
+
+}
+
+.lol:hover {
+  
+  color: black;
+  background-color: royalblue;
+  cursor:grab;
+}
+
+    
+
+
+</style>
+    
+</head>
+<body>
+    <form action="">
+    <h1>Payment Form</h1>
+    <div class="container">
+    <h2>Contact Information</h2>
+    <p> <span> Name: *  </span><input type="text" name="name"  required></p>
+
+    
+        <legend>Gender *</legend>
+    <p>Male <input type="radio" name="gender" required> Female <input type="radio" name="gender"  required></p>
+
+
+
+<p>Address: <textarea name="address" id="address" cols="40" rows="5"></textarea></p>
+<p>Email: * <input type="Email" name="email" id="email" required></p>
+<p>Pincode: * <input type="number" name="pincode" id="pincode" required></p>
+
+<h2>Payment Information</h2>
+
+<p> Card Type: *
+    <select name="card Type" id="card Type" required>
+
+    <option value="">--Select a Card Type</option>
+    <option value="Rupay">Rupay</option>
+    <option value="Visa">Visa</option>
+    <option value="Paypal">Paypal</option>
+    <option value="HDFC">HDFC</option>
+    <option value="Axis Bank">Axis Bank</option>
+
+</select>
+</p>
+
+<p>Card Number: *
+    <input type="number" name="card number" id="card number" required>
+</p>
+
+<p>CVV: *
+    <input type="password" name="cvvnumber" id="cvv number" required>
+</p>
+
+<p>Expiration Date: *
+    <input type="date" name="exp date" id="exp date" required>
+</p>
+
+<button class="lol">
+
+    Pay Now
+</button>
+</form>
+</div>
+</body>
+</html>
